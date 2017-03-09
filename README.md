@@ -1,2 +1,0 @@
-# weltspartag.eu
-ois guade
