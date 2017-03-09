@@ -1,28 +1,63 @@
 <html lang="de">
 <meta name="robots" content="noindex, nofollow">
-<meta name="viewport" content="user-scalable=no, width=device-width, minimum-scale=1.0, maximum-scale=1.0"/>
+<meta name="viewport" content="user-scalable=no, width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
 
 <style>
 	* {
 		box-sizing: border-box;
 	}
-
+	
 	body {
 		font-family: sans-serif;
 		background: #f7f7f7;
-		margin:0;
+		margin: 0;
 	}
-
-	h1 {
+	
+	layout {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+		text-align: center;
+		background: rgba(255, 255, 255, 0.7);
+		/*padding: 20px;*/
+	}
+	
+	content {
 		flex: 1;
-		font-size: calc( 50px + (100 - 50) * (100vw - 300px) / (1500 - 300) );
+		align-items: center;
+		justify-content: center;
+		display: flex;
+		padding:20px;
+	}
+	
+	h1 {
+		flex:1;
+		font-size: calc( 50px + (100 - 50) * (100vw - 300px) / (1500 - 300));
 		font-weight: 700;
 	}
+	
+	footer {
+		flex: 0 0 50px;
+		padding:20px;
+		color: gray;
+	}
+	
+	footer a {
+		color: black;
+		text-decoration: none;
+	}
+	
 </style>
 
-<boldText>
-	<h1>
-		Ois guade zum w&ouml;dspoadog!
-	</h1>
-</boldText>
-
+<layout>
+	<content>
+		<h1>
+			Ois guade zum w&ouml;dspoadog!
+		</h1>
+	</content>
+	<footer>
+		Gesellschafter: 
+		<a href="https://twitter.com/thisisgordon">@thisisgordon</a> 
+		<a href="https://twitter.com/fetzi_io">@fetzi_io</a> 
+	</footer>
+</layout>
