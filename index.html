@@ -13,13 +13,21 @@
 		margin: 0;
 	}
 	
+	#yolo {
+		position: fixed;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		pointer-events: none;
+	}
+	
 	layout {
 		display: flex;
 		flex-direction: column;
 		min-height: 100%;
 		text-align: center;
 		background: rgba(255, 255, 255, 0.7);
-		/*padding: 20px;*/
 	}
 	
 	content {
@@ -42,25 +50,40 @@
 		color: gray;
 	}
 	
-	footer a {
+	a {
 		color: black;
 		text-decoration: none;
+	}
+	
+	psmall {
+		font-size: 80%;
+		opacity: 0.5;
 	}
 	
 </style>
 
 <layout>
+	<marquee id="yolo" direction="down" behavior="alternate">
+		<marquee behavior="alternate">
+			Du bist a heisl
+		</marquee>
+	</marquee>
+	
 	<content>
 		<h1>
 			Ois guade zum w&ouml;dspoatog!
 		</h1>
 	</content>
+	
 	<footer>
 		<p>
 			Gesellschafter: 
 			<a href="https://twitter.com/thisisgordon">@thisisgordon</a> 
 			<a href="https://twitter.com/fetzi_io">@fetzi_io</a> 
 		</p>
+		<psmall>
+			Ausgeschiedene Gesellschafter:
+			<a href="https://www.pliquid.com/">Christoph</a>
 		<p>
 			<a href="https://twitter.com/share" class="twitter-share-button" data-text="Ois guade ihr heisl!" data-url="http://weltspartag.eu"data-size="large" data-hashtags="woedspoatog">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 		</p>
